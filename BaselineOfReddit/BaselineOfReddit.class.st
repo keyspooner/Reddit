@@ -10,9 +10,11 @@ BaselineOfReddit >> baseline: spec [
 	spec
 		for: #common
 		do: [
+			
+			spec postLoadDoIt: #'postload:package:'.
 			self seaside: spec.
 			self postgresAndGlorp: spec.
-			spec  package: 'Reddit' with: [spec requires: #('Seaside3' 'P3')]]
+			spec  package: 'Reddit' with: [spec requires: #('Seaside3' 'P3' 'P3-Glorp')]]
 ]
 
 { #category : #baselines }
@@ -24,6 +26,12 @@ BaselineOfReddit >> postgresAndGlorp: spec [
 			loads: #('glorp');
 			repository: 'github://svenvc/P3' ]
 		
+]
+
+{ #category : #baselines }
+BaselineOfReddit >> postload: loader package: packageSpec [
+	PharoDatabaseAccessor DefaultDriver: P3DatabaseDriver.
+	Transcript show: 'PharoDatabaseAccessor default driver set to P3DatabaseDriver'
 ]
 
 { #category : #baselines }
