@@ -12,7 +12,7 @@ BaselineOfReddit >> baseline: spec [
 		do: [
 			self seaside: spec.
 			self postgresAndGlorp: spec.
-			spec  package: 'Reddit' with: [spec requires: #('Seaside3' 'P3' 'P3-Glorp')]]
+			spec  package: 'Reddit' with: [spec requires: #('Seaside3' 'P3')]]
 ]
 
 { #category : #baselines }
