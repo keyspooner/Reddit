@@ -10,11 +10,10 @@ BaselineOfReddit >> baseline: spec [
 	spec
 		for: #common
 		do: [
-			
 			spec postLoadDoIt: #'postload:package:'.
 			self seaside: spec.
 			self postgresAndGlorp: spec.
-			spec  package: 'Reddit' with: [spec requires: #('Seaside3' 'P3' 'P3-Glorp')]]
+			spec  package: 'Reddit' with: [spec requires: #('Seaside3' 'P3')]]
 ]
 
 { #category : #baselines }
