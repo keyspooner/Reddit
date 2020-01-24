@@ -17,7 +17,9 @@ BaselineOfReddit >> baseline: spec [
 { #category : #baselines }
 BaselineOfReddit >> seaside: spec [
 	spec 
-		baseline: 'Seaside3';
-		with: [ spec repository: 'github://SeasideSt/Seaside:master/repository' ];
-		load
+		baseline: 'Seaside3'
+		with: [ spec 
+						loads: #('Stable');
+						repository: 'github://SeasideSt/Seaside:master/repository' ]
+		
 ]
