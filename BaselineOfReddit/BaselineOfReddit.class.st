@@ -19,7 +19,6 @@ BaselineOfReddit >> seaside: spec [
 	spec 
 		baseline: 'Seaside3'
 		with: [ spec 
-						loads: #('Stable');
 						repository: 'github://SeasideSt/Seaside:master/repository' ]
 		
 ]
