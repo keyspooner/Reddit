@@ -15,6 +15,7 @@ BaselineOfReddit >> baseline: spec [
 			"Packages"
 			spec
 				"package: 'RedditClone' with: [ spec requires: #('Glorp' 'Seaside3') ]"
-				package: 'Reddit'
+				package: 'Reddit';
+				package: 'Reddit-Tests' with: [ spec requires: #('Reddit') ]
 		]
 ]
