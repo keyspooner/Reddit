@@ -1,7 +1,7 @@
 Class {
 	#name : #RedditLinkTests,
 	#superclass : #TestCase,
-	#category : #'Reddit-Tests'
+	#category : #Reddit
 }
 
 { #category : #tests }
