@@ -48,6 +48,10 @@ p {
   margin: 0 0 10px 0;
 }
 
+.adminPassword {
+  margin: 0;
+}
+
 a {
   color: #0076a3;
   background-color: transparent;
@@ -69,6 +73,11 @@ ol li a {
 
 input {
   display: block;
+  margin: 5px 0 10px 0;
+}
+
+.submitButton {
+  display: inline-block;
   margin: 5px 0 10px 0;
 }'
 ]

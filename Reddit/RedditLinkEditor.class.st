@@ -95,14 +95,18 @@ RedditLinkEditor >> renderContentOn: html [
 			placeholder: 'Title';
 			on: #title of: self.
 		html render: self captcha.
-		html paragraph: 'Enter the admin password for new links:'.
+		html paragraph class: 'adminPassword'; with: 'Enter the admin password for new links:'.
 		html heading level3 with: 'I don''t trust you, internet...'.
 		html passwordInput 
 			size: 48;
 			on: #password of: self.
-		html submitButton on: #cancel of: self.
-		html submitButton on: #save of: self.
+		html div: [ 	
+					html submitButton on: #save of: self; class: 'submitButton'.
+					html submitButton on: #cancel of: self; class: 'submitButton'.		
+					].
+		html horizontalRule.
 		 ]
+		
 ]
 
 { #category : #rendering }
