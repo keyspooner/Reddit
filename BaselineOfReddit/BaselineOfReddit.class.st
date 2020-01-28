@@ -34,6 +34,12 @@ BaselineOfReddit >> postload: loader package: packageSpec [
 ]
 
 { #category : #baselines }
+BaselineOfReddit >> projectClass [
+	^ MetacelloCypressBaselineProject
+		
+]
+
+{ #category : #baselines }
 BaselineOfReddit >> seaside: spec [
 	spec 
 		baseline: 'Seaside3'
