@@ -1,3 +1,6 @@
+"
+Built by following the tutorial on https://medium.com/concerning-pharo/reddit-st-in-10-cool-pharo-classes-1b5327ca0740
+"
 Class {
 	#name : #RedditWebApp,
 	#superclass : #WAComponent,
@@ -108,7 +111,7 @@ RedditWebApp >> renderActionsOn: html [
 
 { #category : #rendering }
 RedditWebApp >> renderContentOn: html [
-  html heading: 'Reddit.st'.
+  html heading: 'SimpleReddit.st'.
   self renderActionsOn: html.
   self linkEditor ifNotNil: [ html render: self linkEditor].
   self renderHighestRankingLinksOn: html.
